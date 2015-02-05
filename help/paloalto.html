@@ -35,31 +35,16 @@
                   <!-- inizia lista centrale -->
                   <div>
                      <div class="section_title">
-                        <h1>Bookmarklet per Servizi UNIPA</h1>
+                        <h1>Come usare PaloAlto Bookmarklet</h1>
                      </div>
                      <div class="post">
-                        <h2>Per utilizzare i bookmarklet e' necessario
-                        <ol>
-                           <li>trascinare il link sulla barra dei segnalibri del browser</li>
-                           <li>visitare la pagina dove eseguire il bookmarklet</li>
-                           <li>cliccare sul segnalibro creato in precedenza</li>
-                        </ol>
-                        <h2>
-                        <p>Browser supportati: Firefox 30+, Chrome 25+</p>
-                     </div>
-                  </div>
-
-                  <div>
-                     <div class="section_title">
-                        <h1>Lista Bookmarklet</h1>
-                     </div>
-                     <div class="post">
-                        <ul>
-                           <li>
-                              Trascinare il link <a style="color:red" href="javascript:try{var%20s=document.createElement('script');s.setAttribute('src','https://rawgit.com/unipa/webaddons/master/bookmarklets/paloalto/paloalto.js');document.getElementsByTagName('body')[0].appendChild(s);}catch(e){alert(e)};void(s);">Palo Alto Filter</a> sulla barra dei segnalibri
-                              <p>Permette di filtrare gli IP da visualizzare sulla pagina di report di Palo Alto <a href="help/paloalto.html">[Istruzioni]</a></p>
-                           </li>
-                        </ul>
+                        <p>Una volta cliccato sul segnalibro, apparira' una nuova voce di menu come mostrato in figura</p>
+                        <img src="menu.png" width="70%"/>
+                        <p>La prima volta che si usa lo script verra' richiesto di inserire su quale/i sottoclasse/i si vuole filtrare, ad esempio <code>192.168.10</code> (non specificare l'ultimo ottetto altrimenti si filtra per IP puntuale)</p>
+                        <p>La scelta viene memorizzata sul browser per cui non dovra' piu' essere specificata (a meno di cancellare la cache)</p>
+                        <p>Successivamente sara' sufficiente visitare la pagina palo alto, cliccare sul bookmarklet e vedere la lista contenente i soli IP afferenti alla scelta fatta</p>
+                        <br/>
+                        <p>Nota tecnica: Le impostazioni vengono salvare sul <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">localStorage</a>, se sono attive estensioni o plugin che ne impediscono l'uso allora le sottoclassi verranno richieste ogni volta</p>
                      </div>
                   </div>
 
