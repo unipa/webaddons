@@ -1,2 +1,2 @@
 # webaddons
-Bookmarklet, GreaseMonkey script and any other resource useful to improve our web apps
+Bookmarklet, GreaseMonkey scripts and any other resources useful to improve our web apps
